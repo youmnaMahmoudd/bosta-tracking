@@ -15,7 +15,7 @@ export const ShipmentWrapper = styled.div`
 
 `;
 export const Title =styled.h1`
-  font-size:1rem;
+  font-size:18px;
   padding:7px;
   font-weight:600;
 `
@@ -30,11 +30,13 @@ export const TableHolder =styled.div`
 `
 export const StyledTable = styled.table`
   border-collapse: collapse;
-  width:100%;
+  width: 100%;
+  border-radius: 6px; /* Add rounded corners to the table */
+
   th, td {
     border: 1px solid var(--gray-300);
     padding: 8px;
-    font-size:14px;
+    font-size:16px;
   }
   td {
     font-weight: 500;
