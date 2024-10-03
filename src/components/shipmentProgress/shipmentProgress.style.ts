@@ -82,7 +82,7 @@ export const Step = styled.div<{ isCancelled?: boolean }>`
     font-size: 1rem;
     font-weight: 650;
     color: var(--gray-500);
-    padding-right: 8px;
+    padding-right: 5px;
     padding-left: 12px;
   }
 
