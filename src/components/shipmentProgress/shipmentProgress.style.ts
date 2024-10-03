@@ -20,7 +20,7 @@ border-bottom:1px solid var(--gray-300);
 grid-template-columns: repeat(4, 1fr);
 gap: 6px;
 `
-export const TextHolder =styled.div`
+export const TextHolder =styled.div <{isCancelled?:boolean, isFinished?:boolean}>`
 display:flex;
 flex-direction: column;
 gap: 4px;
@@ -30,17 +30,15 @@ color: var(--gray-600);
 font-size:16px;
 }
 h2{
-color: var(--gray-800);
+color: ${(props) => (props.isCancelled ? '#E30613':props.isFinished ?'#16a34a':'var(--gray-800)' )};
 font-size:18px;
 font-weight:650;
 }
   @media (max-width: 768px) {
   p{
-color: var(--gray-600);
 font-size:12px;
 }
 h2{
-color: var(--gray-800);
 font-size:12px;
 }
   }

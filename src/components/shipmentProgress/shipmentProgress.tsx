@@ -119,12 +119,12 @@ interface CheckoutStepperProps {
     return (
       <Container>
         <TextContainer>
-          <TextHolder>
+          <TextHolder isCancelled ={isCancelled} isFinished={activeStep===4}>
             <p>
               {t('ENTER_TRACK_NO')} {data.TrackingNumber}
             </p>
             <h2>
-              {isCancelled ? "Cancelled" : t(data.CurrentStatus.state)}
+              {isCancelled ? t('CANCELLED') : t(data.CurrentStatus.state)}
             </h2>
           </TextHolder>
           <TextHolder>
