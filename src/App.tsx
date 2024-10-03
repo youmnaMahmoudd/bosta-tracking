@@ -1,5 +1,5 @@
-import React from 'react';
-import ShipmentTracker from './components/shipmentTracker/shipmentTracker';
+import React from "react";
+import ShipmentTracker from "./components/shipmentTracker/shipmentTracker";
 const App: React.FC = () => {
   return (
     <>

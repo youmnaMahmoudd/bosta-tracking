@@ -3,40 +3,40 @@ import styled from "styled-components";
 export const ShipmentWrapper = styled.div`
   margin: 20px 0;
   overflow-x: auto;
-  width:100%;
-  display:flex;
-  gap:20px;
-  @media (max-width: 768px) {
-  flex-direction:column;
-  gap:10px;
-  justify-content:center;
-  align-items:center;
-  }
-
-`;
-export const Title =styled.h1`
-  font-size:18px;
-  padding:7px;
-  font-weight:600;
-`
-export const TableHolder =styled.div`
-  flex:1;
+  width: 100%;
   display: flex;
-  flex-direction:column;
-  gap:8px;
+  gap: 20px;
   @media (max-width: 768px) {
-  flex:-1;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
-`
+`;
+export const Title = styled.h1`
+  font-size: 18px;
+  padding: 7px;
+  font-weight: 600;
+`;
+export const TableHolder = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @media (max-width: 768px) {
+    flex: -1;
+  }
+`;
 export const StyledTable = styled.table`
   border-collapse: collapse;
   width: 100%;
   border-radius: 6px; /* Add rounded corners to the table */
 
-  th, td {
+  th,
+  td {
     border: 1px solid var(--gray-300);
     padding: 8px;
-    font-size:16px;
+    font-size: 16px;
   }
   td {
     font-weight: 500;
@@ -49,22 +49,21 @@ export const StyledTable = styled.table`
   }
 `;
 
-export const ShipmentAddressHolder =styled.div`
-  width:30%;
+export const ShipmentAddressHolder = styled.div`
+  width: 30%;
   display: flex;
-  flex-direction:column;
-  gap:8px;
+  flex-direction: column;
+  gap: 8px;
   @media (max-width: 768px) {
-    width:95%;
+    width: 95%;
   }
-`
+`;
 
-export const ShipmentAddress =styled.div`
+export const ShipmentAddress = styled.div`
   border: 1px solid var(--gray-300);
-  border-radius:6px;
+  border-radius: 6px;
   padding: 18px;
-  height:100px;
-  width:100%;
-  color:var(--gray-700);
-
-`
+  height: 100px;
+  width: 100%;
+  color: var(--gray-700);
+`;

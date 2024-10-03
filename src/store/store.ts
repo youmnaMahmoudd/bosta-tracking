@@ -1,14 +1,14 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { bostaApi } from './api/api';
-import shipmentReducer from './slice/shipment.slice';
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import { combineReducers } from 'redux';
+import { configureStore } from "@reduxjs/toolkit";
+import { bostaApi } from "./api/api";
+import shipmentReducer from "./slice/shipment.slice";
+import { persistStore, persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import { combineReducers } from "redux";
 
 const persistConfig = {
-  key: 'root',
+  key: "root",
   storage,
-  whitelist: ['shipment'],
+  whitelist: ["shipment"],
 };
 
 const rootReducer = combineReducers({

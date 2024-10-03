@@ -1,6 +1,6 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { ShipmentResponse } from '../../types/type';
-import { RootState } from '../store';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { ShipmentResponse } from "../../types/type";
+import { RootState } from "../store";
 
 interface ShipmentState {
   data: ShipmentResponse | null;
@@ -15,7 +15,7 @@ const initialState: ShipmentState = {
 };
 
 const shipmentSlice = createSlice({
-  name: 'shipment',
+  name: "shipment",
   initialState,
   reducers: {
     fetchShipmentStart: (state) => {
@@ -40,7 +40,12 @@ const shipmentSlice = createSlice({
   },
 });
 
-export const { fetchShipmentStart, fetchShipmentSuccess, fetchShipmentFailure, clearShipmentData } = shipmentSlice.actions;
+export const {
+  fetchShipmentStart,
+  fetchShipmentSuccess,
+  fetchShipmentFailure,
+  clearShipmentData,
+} = shipmentSlice.actions;
 
 export const selectShipment = (state: RootState) => state.shipment;
 
