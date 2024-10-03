@@ -108,19 +108,21 @@ export const FormHolder =styled.form <{ isAR?: boolean }>`
 
 
 `
-export const ButtonHolder =styled.div`
+export const ButtonHolder = styled.div`
+  width: 100%;
+  align-items: center;
+  justify-content: flex-right;
 
-    width:100%;
-    align-items: center;
-    justify-content: flex-right;
-
-  button{
+  button {
     background: #E30613;
-    color:white;
-    width:40%;
-    padding:6px;
-    border-radius:6px;
+    color: white;
+    width: 40%;
+    padding: 6px;
+    border-radius: 6px;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8; 
+    }
   }
-
-
-`
+`;
